@@ -1529,8 +1529,8 @@ class polefigure:
                 print(f'cang: {cang}')
                 raise IOError('** Error in fnsx/csym,cdim,cang')
             elif type(fnsx)==type(None) and \
-               (type(csym)==type(None) or  \
-                type(cdim)==type(None) or \
+               (type(csym)==type(None) and  \
+                type(cdim)==type(None) and \
                 type(cang)==type(None)):
                 print('**Error: At least either fnsx or (csym,cdim,cang) should be given')
                 raise IOError('** Error in fnsx/csym,cdim,cang')
